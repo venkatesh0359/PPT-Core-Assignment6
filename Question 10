@@ -1,1 +1,30 @@
+Define LinkedHashMap in Java
 
+LinkedHashMap in Java is a class that extends HashMap and provides a combination of a hash table and a linked list to maintain the order of insertion. Like HashMap, it stores key-value pairs, but it also maintains the order in which elements were added to the map. This means that when you iterate over a LinkedHashMap, the elements will be returned in the order in which they were inserted.
+Key features of LinkedHashMap:
+
+Order Maintenance: LinkedHashMap maintains the insertion order of elements. When iterating through the map, the elements will be returned in the order they were added.
+
+Hash Table with Buckets: It uses a hash table for storing key-value pairs, and for each bucket, it maintains a linked list to preserve the insertion order.
+
+Performance: The performance of LinkedHashMap is slightly slower than HashMap due to the overhead of maintaining the linked list for order.
+
+Iteration Order: By default, elements are returned in the order they were inserted. However, you can also create a LinkedHashMap with a constructor that takes an access-order flag, which allows you to iterate based on the access order (most-recently accessed first).
+
+
+import java.util.LinkedHashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>();
+        
+        linkedHashMap.put("apple", 1);
+        linkedHashMap.put("banana", 2);
+        linkedHashMap.put("orange", 3);
+        
+        // Output will be in the order: apple, banana, orange
+        for (String key : linkedHashMap.keySet()) {
+            System.out.println(key);
+        }
+    }
+}
