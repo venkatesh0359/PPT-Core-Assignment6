@@ -1,1 +1,16 @@
+Q) Distinguish between a hashmap and a Treemap.
+
+HashMap:
+
+Data Structure: HashMap uses an array of buckets (internal array) and uses hashing to map keys to their corresponding buckets. It offers constant-time average case complexity for basic operations like put() and get().
+Sorting: HashMap does not maintain any specific order for the keys. The keys are not sorted, and the iteration order is not predictable.
+Performance: HashMap's performance is generally faster than TreeMap for basic operations, especially when the number of elements is large, due to its constant-time average case complexity for basic operations.
+Complexity: The time complexity for put(), get(), and remove() operations in HashMap is O(1) on average, but in some cases, it can be O(n) in the worst case.
+TreeMap:
+
+Data Structure: TreeMap is implemented as a Red-Black tree, which is a self-balancing binary search tree. It keeps the keys in sorted order based on their natural ordering or a custom comparator.
+Sorting: TreeMap maintains the keys in sorted order, making it suitable for scenarios where the keys need to be processed in a specific order.
+Performance: TreeMap's performance is generally slower than HashMap for basic operations, especially when the number of elements is large, due to the overhead of maintaining the tree's balance.
+Complexity: The time complexity for put(), get(), and remove() operations in TreeMap is O(log n), where n is the number of elements in the TreeMap. This makes TreeMap slower than HashMap for large datasets.
+In summary, use HashMap when you need fast access to elements and don't require sorted keys, and use TreeMap when you need the keys to be sorted or when you want to define a custom sorting order.
 
