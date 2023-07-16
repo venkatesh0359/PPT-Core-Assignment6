@@ -1,1 +1,2 @@
-
+What is Collection in Java?
+Collection in Java refers to a framework that provides an architecture to store and manipulate groups of objects. It is a part of the Java Collections Framework, which is a set of classes and interfaces that facilitate working with collections of elements. Collections in Java can be used to store, retrieve, and manipulate data in various data structures like lists, sets, queues, etc.
