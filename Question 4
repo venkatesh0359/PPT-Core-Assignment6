@@ -1,1 +1,18 @@
+Explain the various interfaces used in the Collection framework.
 
+The Collection framework in Java includes several interfaces, some of which are:
+Collection: The root interface that defines basic operations like add, remove, contains, etc., for a generic collection of objects.
+
+List: An ordered collection (also known as a sequence) that allows duplicate elements. It provides positional access and supports methods like get, set, add, remove, etc.
+
+Set: A collection that does not allow duplicate elements. It models the mathematical set abstraction and provides methods to add, remove, and check for element existence.
+
+Queue: A collection used to hold elements before processing. It follows the First-In-First-Out (FIFO) order.
+
+Map: An object that maps keys to values. It does not extend the Collection interface but is an essential part of the Collections Framework. It does not allow duplicate keys.
+
+SortedSet: A Set that maintains elements in sorted order.
+
+SortedMap: A Map that maintains keys in sorted order.
+
+Deque: A double-ended queue that allows insertion and removal from both ends.
