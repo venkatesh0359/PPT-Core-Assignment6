@@ -1,1 +1,14 @@
+Differentiate between List and Set in Java.
 
+List:
+
+Ordered: List maintains the order of elements based on their insertion.
+Duplicates: List allows duplicate elements; the same element can appear multiple times in a list.
+Index-based access: List elements can be accessed using their index (position) in the list.
+Implementations: Common implementations of List are ArrayList (dynamic array) and LinkedList (doubly linked list).
+Set:
+
+Unordered: Set does not maintain the order of elements; they are stored in a way that allows for efficient retrieval.
+No duplicates: Set does not allow duplicate elements; each element is unique in a set.
+No index-based access: Set does not provide index-based access since it does not maintain the order.
+Implementations: Common implementations of Set are HashSet (uses hash table) and TreeSet (stores elements in a sorted tree structure).
