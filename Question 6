@@ -1,1 +1,15 @@
+What is the Differentiate between Iterator and ListIterator in Java.
 
+Both Iterator and ListIterator are interfaces used to traverse collections in Java, but there are some differences:
+Iterator:
+
+Universal: Iterator is applicable to all types of collections, including lists, sets, and queues.
+Direction: It allows only forward iteration, i.e., you can traverse elements in a collection only in one direction.
+Methods: Provides basic methods like hasNext() to check if there is a next element, next() to retrieve the next element, and remove() to remove the last element returned by next().
+Use-case: Suitable for traversing collections when you only need to move forward and perform simple operations on elements.
+ListIterator:
+
+Limited to Lists: ListIterator is specific to Lists and can only be used to traverse lists.
+Direction: It allows both forward and backward iteration, meaning you can traverse elements in both directions.
+Additional Methods: In addition to the methods provided by Iterator, ListIterator also offers hasPrevious(), previous(), add(), set(), etc.
+Use-case: Ideal for traversing lists when you need to move in both directions and perform more complex operations like adding or removing elements during traversal.
