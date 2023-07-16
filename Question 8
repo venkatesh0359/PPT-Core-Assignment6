@@ -1,1 +1,6 @@
+What is collision in HashMap?
 
+In the context of HashMap, a collision occurs when two or more different keys hash to the same index in the internal array used to store key-value pairs. HashMap uses a hashing technique to convert keys into indices for faster retrieval of values. However, since the number of possible hash codes (integers) is limited, collisions can occur when multiple keys produce the same hash code or end up in the same bucket (array index).
+To handle collisions, HashMap uses a concept called chaining. Instead of storing just one key-value pair in each bucket (array index), it maintains a linked list or a balanced tree (Java 8 onwards) of key-value pairs that hash to the same index. When retrieving a value, HashMap uses the key's hash code to find the appropriate bucket and then searches through the linked list or the tree (if applicable) to find the exact key-value pair.
+
+By using chaining, HashMap can efficiently handle collisions and maintain a high level of performance even when there are multiple key-value pairs hashed to the same index.
