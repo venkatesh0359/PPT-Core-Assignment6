@@ -1,1 +1,4 @@
+ Differentiate between Collection and collections in the context of Java
 
+In Java, "Collection" (with a capital 'C') refers to the root interface of the Java Collections Framework. It acts as the base interface for all the other collection interfaces like List, Set, Queue, etc. It defines the common methods and behaviors that all collections should have.
+On the other hand, "collections" (with a lowercase 'c') typically refer to the various classes and implementations provided by the Java Collections Framework, such as ArrayList, HashSet, LinkedList, TreeMap, etc. These classes are used to work with collections of data and implement the functionalities defined in the Collection interface.
