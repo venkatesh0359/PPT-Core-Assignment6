@@ -1,1 +1,12 @@
+What is the Differentiate between Comparable and Comparator?
 
+Comparable:
+
+Single Sorting Sequence: The Comparable interface is used when you want to define a natural ordering for a class. It is typically implemented by the class itself.
+compareTo(): The Comparable interface has a single method compareTo(Object o) that defines the natural ordering of the objects. It returns a negative integer if the current object is less than the compared object, zero if they are equal, and a positive integer if the current object is greater.
+One Type of Sorting: With Comparable, you can have only one way of sorting the objects. It is fixed and cannot be changed without modifying the class implementation.
+Comparator:
+
+External Sorting Sequence: The Comparator interface is used when you want to define multiple sorting sequences for a class, or when you cannot modify the class itself to implement Comparable.
+compare(): The Comparator interface has a method compare(Object o1, Object o2) that compares two objects based on a specific sorting order defined by the Comparator.
+Multiple Sorting: With Comparator, you can define multiple comparators to sort objects differently without modifying the class implementation. It allows for flexibility in sorting.
